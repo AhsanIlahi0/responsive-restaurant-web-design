@@ -30,6 +30,8 @@
     text-align: center;
     background-color: white;
     border: none;
+    transition: .4s;
+    /* position: fixed; */
 }
 
 .close {
@@ -49,6 +51,7 @@ body {
     background-image: url(imag/1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed; ;
     height: 100vh;
     margin: 0; /* Ensure no margins */
     padding: 0; /* Ensure no paddings */
@@ -68,17 +71,27 @@ body {
     left: 0;
     right: 0;
     z-index: 1000; /* Ensure navbar is on top */
-    background-color: transparent;}
-
-#navbar:hover {
-    background-color: #c7ab892a;
+    background-color: rgba(0, 0, 0, 0.2);
 }
+
+/* #navbar:hover {
+    background-color: #c7ab892a;
+} */
 
 h1 {
     margin-right: 100px;
-    cursor: pointer;
+  
     font-weight: 1000;
     font-family: Arial, Helvetica, sans-serif;
+   
+}
+#title{
+    cursor: pointer;
+    transition: .4s ease;
+}
+#title:hover{
+    text-decoration: underline;
+
 }
 
 h7 {
@@ -89,7 +102,6 @@ h7 {
     font-weight: bolder;
     transition: .35s;
 }
-
 .book {
     cursor: pointer;
     text-align: center;
@@ -103,7 +115,6 @@ h7 {
     color: white;
     transition: .5s;
 }
-
 .book:hover {
     background-color: rgb(158, 132, 100);
 }
@@ -119,11 +130,9 @@ h7:hover {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    height: 200px;
-    width: 200px;
-    
+    height: 300px;
+    width: 300px;
 }
-
 #txt {
     font-size: 60px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -165,18 +174,27 @@ h7:hover {
     flex-direction: column;
     height: 400px;
     /* align-items: center; */
+    transition: .4s;
+}
+.card:hover {
+   
 }
 
 .card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .card-content {
     color: #757575;
     padding: 15px;
     text-transform: capitalize;
+}
+.card:hover{
+    background-color:#cfcece ;
+    box-shadow: 1px 1px 10px #000000;
 }
 
 .card-content h2 {
@@ -201,6 +219,7 @@ h7:hover {
     background-color: #3b3b3b;
 }
 
+
 /* Media Queries */
 @media (max-width: 768px) {
     #navbar {
@@ -217,6 +236,9 @@ h7:hover {
 
     .cards-container {
         gap: 10px;
+    }
+    .modal-content{
+        margin-top: 40vh;
     }
 }
 
