@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- <div class="contact"></div> -->
+        <nav id="navbar">
+            <h1 style="margin-left: 0px;" onclick="color('first')">Feliciano</h1>
+            <h7 class="active" id="first" onclick="color('first')">Home</h7>
+            <h7 id="second" onclick="color('second')">About</h7>
+            <h7 id="third" onclick="color('third')">Menu</h7>
+            <h7 id="fourth" onclick="color('fourth')">Stories</h7>
+            <h7 id="fifth" onclick="color('fifth')">Contact</h7>
+            <button class="book" onclick="openModal()">book a table</button>
+        </nav>
+    </header>
+    <img id="logo" src="imag/logo.png" alt="Logo">
+    <h1 id="txt">nutritious & tasty</h1>
+    <div class="cards-container">
+        <div class="card">
+            <img src="imag/chicken fried.avif" alt="Chicken Fried">
+            <div class="card-content">
+                <h2>card 1</h2>
+                <br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas veritatis atque fugiat exercitationem fuga. 
+            </div>
+            <button class="RM">read more</button>
+        </div>
+        <div class="card">
+            <img src="imag/royal.jpg" alt="Royal">
+            <div class="card-content">
+                <h2>card 2</h2>
+                <br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas veritatis atque fugiat exercitationem fuga. 
+            </div>
+            <button class="RM">read more</button>
+        </div>
+        <div class="card">
+            <img src="imag/royal 1.jpg" alt="Royal 1">
+            <div class="card-content">
+                <h2>card 3</h2>
+                <br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas veritatis atque fugiat exercitationem fuga. 
+            </div>
+            <button class="RM">read more</button>
+        </div>
+        <div class="card" style="margin-right: 0;">
+            <img src="imag/mixed.webp" alt="Mixed">
+            <div class="card-content">
+                <h2>card 4</h2>
+                <br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas veritatis atque fugiat exercitationem fuga. 
+            </div>
+            <button  class="RM">read more</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
