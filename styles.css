@@ -1,4 +1,4 @@
-* {
+ii* {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -250,7 +250,4 @@ h7:hover {
     .RM {
         width: 70px;
     }
-}
-.logo-margin{
-    margin-top: 40vh;
 }
